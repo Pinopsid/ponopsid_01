@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+        function UploadModel() {
+            $("#Link").attr('href', "UploadModel.php?SimplexMethodModelId=" + $("#edSimplexMethodModelId").val());
+        }
+    </script>
+</head>
+<body>
+    Идентификатор модели <input id="edSimplexMethodModelId" type="text" value="0"/>
+    <br /> <br />
+    <a id="Link" href="" onclick="UploadModel();">Скачать файл</a>
+</body>
+</html>
